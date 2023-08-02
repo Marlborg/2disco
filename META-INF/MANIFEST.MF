@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: Evan
+Build-Jdk: 11.0.9
+Main-Class: recordbuyer.DiscBot
+

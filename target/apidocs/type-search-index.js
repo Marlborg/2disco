@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.shapesecurity","l":"App"},{"p":"recordbuyer","l":"DiscBot"},{"p":"recordbuyer","l":"FileLoader"},{"p":"recordbuyer","l":"GlobalProperties"},{"p":"com.shapesecurity.salvation2","l":"MainClass"},{"p":"recordbuyer","l":"ReleaseItem"}];updateSearchResults();

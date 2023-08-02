@@ -1,0 +1,112 @@
+<assembly>
+    <id>custom</id>
+    <formats>
+        <format>tar.gz</format>
+        <format>zip</format>
+    </formats>
+
+    <fileSets>
+        <!-- META-INF directory -->
+        <fileSet>
+            <directory>META-INF</directory>
+            <outputDirectory>META-INF</outputDirectory>
+        </fileSet>
+
+        <!-- com directory -->
+        <fileSet>
+            <directory>com</directory>
+            <outputDirectory>com</outputDirectory>
+        </fileSet>
+
+        <!-- java_cup.runtime directory -->
+        <fileSet>
+            <directory>java_cup.runtime</directory>
+            <outputDirectory>java_cup.runtime</outputDirectory>
+        </fileSet>
+
+        <!-- javax.xml directory -->
+        <fileSet>
+            <directory>javax.xml</directory>
+            <outputDirectory>javax.xml</outputDirectory>
+        </fileSet>
+
+        <!-- license directory -->
+        <fileSet>
+            <directory>license</directory>
+            <outputDirectory>license</outputDirectory>
+        </fileSet>
+
+        <!-- mozilla directory -->
+        <fileSet>
+            <directory>mozilla</directory>
+            <outputDirectory>mozilla</outputDirectory>
+        </fileSet>
+
+        <!-- net.sourceforge.htmlunit directory -->
+        <fileSet>
+            <directory>net.sourceforge.htmlunit</directory>
+            <outputDirectory>net.sourceforge.htmlunit</outputDirectory>
+        </fileSet>
+
+        <!-- netscape directory -->
+        <fileSet>
+            <directory>netscape</directory>
+            <outputDirectory>netscape</outputDirectory>
+        </fileSet>
+
+        <!-- org directory -->
+        <fileSet>
+            <directory>org</directory>
+            <outputDirectory>org</outputDirectory>
+        </fileSet>
+
+        <!-- recordbuyer directory -->
+        <fileSet>
+            <directory>recordbuyer</directory>
+            <outputDirectory>recordbuyer</outputDirectory>
+        </fileSet>
+
+        <!-- trax directory -->
+        <fileSet>
+            <directory>trax</directory>
+            <outputDirectory>trax</outputDirectory>
+        </fileSet>
+
+        <!-- .netbeans_automatic_build file -->
+        <fileSet>
+            <directory>.netbeans_automatic_build</directory>
+            <outputDirectory>.netbeans_automatic_build</outputDirectory>
+        </fileSet>
+
+        <!-- about.html file -->
+        <fileSet>
+            <directory>.</directory>
+            <outputDirectory>.</outputDirectory>
+            <includes>
+                <include>about.html</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+    <!-- Dependency Sets for each artifact -->
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>META-INF.maven</outputDirectory>
+            <includes>
+                <include>com.shapesecurity.salvation2:pom:*</include>
+            </includes>
+            <unpack>true</unpack>
+        </dependencySet>
+
+        <dependencySet>
+            <outputDirectory>META-INF.maven.commons-codec.commons-codec</outputDirectory>
+            <includes>
+                <include>org.apache.commons:commons-codec:*</include>
+            </includes>
+            <unpack>true</unpack>
+        </dependencySet>
+
+        <!-- ... define other dependencies here ... -->
+
+    </dependencySets>
+</assembly>

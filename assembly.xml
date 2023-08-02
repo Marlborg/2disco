@@ -1,0 +1,143 @@
+<assembly>
+    <id>custom</id>
+    <formats>
+        <format>tar.gz</format>
+        <format>zip</format>
+    </formats>
+
+    <fileSets>
+        <!-- Add the META-INF directory -->
+        <fileSet>
+            <directory>META-INF</directory>
+            <outputDirectory>META-INF</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the com directory -->
+        <fileSet>
+            <directory>com</directory>
+            <outputDirectory>com</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the java_cup.runtime directory -->
+        <fileSet>
+            <directory>java_cup.runtime</directory>
+            <outputDirectory>java_cup.runtime</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the javax.xml directory -->
+        <fileSet>
+            <directory>javax.xml</directory>
+            <outputDirectory>javax.xml</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the license directory -->
+        <fileSet>
+            <directory>license</directory>
+            <outputDirectory>license</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the mozilla directory -->
+        <fileSet>
+            <directory>mozilla</directory>
+            <outputDirectory>mozilla</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the net.sourceforge.htmlunit directory -->
+        <fileSet>
+            <directory>net.sourceforge.htmlunit</directory>
+            <outputDirectory>net.sourceforge.htmlunit</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the netscape directory -->
+        <fileSet>
+            <directory>netscape</directory>
+            <outputDirectory>netscape</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the org directory -->
+        <fileSet>
+            <directory>org</directory>
+            <outputDirectory>org</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the recordbuyer directory -->
+        <fileSet>
+            <directory>recordbuyer</directory>
+            <outputDirectory>recordbuyer</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the trax directory -->
+        <fileSet>
+            <directory>trax</directory>
+            <outputDirectory>trax</outputDirectory>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Add the about.html file -->
+        <fileSet>
+            <directory>.</directory>
+            <outputDirectory>.</outputDirectory>
+            <includes>
+                <include>about.html</include>
+            </includes>
+            <excludes>
+                <exclude>.netbeans_automatic_build/**</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+
+
+    <!-- Dependency Sets for each artifact -->
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>META-INF.maven</outputDirectory>
+            <includes>
+                <include>com.shapesecurity.salvation2:pom:*</include>
+            </includes>
+            <unpack>true</unpack>
+        </dependencySet>
+
+        <dependencySet>
+            <outputDirectory>META-INF.maven.commons-codec.commons-codec</outputDirectory>
+            <includes>
+                <include>org.apache.commons:commons-codec:*</include>
+            </includes>
+            <unpack>true</unpack>
+        </dependencySet>
+
+        <!-- ... define other dependencies here ... -->
+
+    </dependencySets>
+</assembly>

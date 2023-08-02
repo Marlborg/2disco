@@ -1,0 +1,7 @@
+digraph "commons-logging:commons-logging:jar:1.2" { 
+	"commons-logging:commons-logging:jar:1.2" -> "junit:junit:jar:3.8.1:test" ; 
+	"commons-logging:commons-logging:jar:1.2" -> "log4j:log4j:jar:1.2.17:compile (optional) " ; 
+	"commons-logging:commons-logging:jar:1.2" -> "logkit:logkit:jar:1.0.1:compile (optional) " ; 
+	"commons-logging:commons-logging:jar:1.2" -> "avalon-framework:avalon-framework:jar:4.1.5:compile (optional) " ; 
+	"commons-logging:commons-logging:jar:1.2" -> "javax.servlet:servlet-api:jar:2.3:provided (optional) " ; 
+ } 
