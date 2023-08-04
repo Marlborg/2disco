@@ -54,9 +54,8 @@ public class DiscBot {
   public static void main(String[] args) {
     Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(Level.OFF);
     Logger.getLogger("org.apache.http").setLevel(Level.OFF);
-    System.out.println("DiscBot v" + version + " - A Discogs shopping assistant");
+    System.out.println("DiscBot v" + version");
     System.out.println();
-    System.out.println("Contact: martin.arnsrud@gmail.com");
     System.out.println();
     (new Thread(new Runnable() {
           public void run() {
